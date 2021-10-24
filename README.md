@@ -4,7 +4,7 @@ Clone the Repo
 
 Unzip it
 
-pip install pipenv
+<h1>pip install pipenv</h1>
 
 pipenv shell
 
@@ -13,7 +13,9 @@ pipenv install
 cd exam
 
 file structure will be like
+
     Exam
+    
       |--exam
       |--accounts
       |--register
