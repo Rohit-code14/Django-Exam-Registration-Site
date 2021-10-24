@@ -4,7 +4,7 @@ Clone the Repo
 
 Unzip it
 
-<h1>pip install pipenv</h1>
+pip install pipenv
 
 pipenv shell
 
