@@ -12,6 +12,16 @@ pipenv install
 
 cd exam
 
+file structure will be like
+    Exam
+      |--exam
+      |--accounts
+      |--register
+      |--static
+      |--templates
+      |--manage.py
+      |--db.sqlite3
+
 python manage.py makemigrations
 
 python manage.py migrate
