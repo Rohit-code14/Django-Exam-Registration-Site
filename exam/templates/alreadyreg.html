@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
+{% block content %}
     <h1 class="title">Choose Exams</h1>
     <form method="post" action="{% url 'registerExam' %}" class="container">
         {% csrf_token %}
@@ -11,6 +11,7 @@
         {% endif %}
         {% endfor %}
         {% for ex in exam %}
+        {% if ex.examCode not in excodes %}
         <div class="item">
             <div class="name">
                 <p>{{ex.examName}} ( {{ex.examCode}} )</p>
@@ -22,6 +23,7 @@
                 <input type="checkbox" class="ck" name="{{ex.examCode}}" value="{{ex.is_selected}}" id="">
             </div>
         </div>
+        {% endif %}
         {% endfor %}
         <button type="submit" class="submit">Submit</button>
     </form>

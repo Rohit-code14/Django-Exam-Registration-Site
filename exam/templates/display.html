@@ -20,6 +20,7 @@
     </div>
     {% endif %}
     {% endfor %}
-    <button type="submit" class="submit">Pay fee</button>
+    <a type="submit" class="submita" href="{% url 'pdf' %}">Pay fee And Generate Invoice</a>
+    <a type="submit" class="submita" href="{% url 'regAgain' %}">Register for Another Exam</a>
 </div>
 {% endblock %}

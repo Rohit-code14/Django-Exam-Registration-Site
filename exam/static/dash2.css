@@ -97,6 +97,22 @@ input.ck{
     cursor: grab;
     background-color: #46B2E0;
 }
+.submita{
+    padding: 10px 10px;
+    margin: 15px 0px;
+    width: 20%;
+    font-size: 20px;
+    color: #fff;
+    background-color:#2827CC ;
+    border: #120E43 2px solid;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.submita:hover{
+    cursor: grab;
+    background-color: #46B2E0;
+}
 
 .alog{
     margin: 0px;

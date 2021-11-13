@@ -23,7 +23,9 @@ urlpatterns = [
     path('',baseRedirect,name="baseRedirect"),
     path('dashboard',dashboard, name="dashboard"),
     path('registerExam',registerExam,name="registerExam"),
+    path('regAgain',regAgain,name="regAgain"),
     path('display',displaySelected,name="displaySelected"),
+    path('pdf',some_view,name="pdf"),
     # path('register/', RegisterUser),
     path('accounts/',include('accounts.urls')),
 ]
