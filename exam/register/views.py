@@ -96,8 +96,8 @@ def some_view(request):
     textobj.textLine(" ")
     textobj.textLine(" ")
     for reg in regExam:
-        count+=1
         if reg.student.studentUser.username == ru:
+            count+=1
             textobj.textLine("{1} ) Exam Name : {0} ".format(reg.exam.examName,count))
             textobj.textLine("Exam Code : {0}".format(reg.exam.examCode))
             textobj.textLine("Exam Date : {0}".format(reg.exam.examDate))
